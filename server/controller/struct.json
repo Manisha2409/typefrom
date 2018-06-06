@@ -1,0 +1,466 @@
+{
+    "title": "This is an example form",
+    "settings": {
+      "language": "en",
+      "is_public": false,
+      "progress_bar": "percentage",
+      "show_progress_bar": true,
+      "show_typeform_branding": false,
+      "meta": {
+        "allow_indexing": true,
+        "description": "Cool meta description",
+        "image": {
+          "href": "https://images.typeform.com/images/4bcd3"
+        }
+      },
+      "redirect_after_submit_url": "https://www.redirecttohere.com",
+      "google_analytics": "UA-1111-22",
+      "notifications": {
+        "self": {
+          "enabled": true,
+          "recipients": [
+            "email@example.org"
+          ],
+          "reply_to": "{{field:email_field_reference}}",
+          "subject": "Typeform: new response for {{form:title}}",
+          "message": "Your typeform {{form:title}} has a new response\n\n{{form:all_answers}}"
+        },
+        "respondent": {
+          "enabled": false,
+          "recipient": "{{field:email_field_reference}}",
+          "reply_to": [
+            "info@example.org"
+          ],
+          "subject": "Typeform: Thank you for completing {{form:title}}!",
+          "message": "Hi {{field:name_field_reference}}!\n\nWe recieved your submission. Thank you, and have a nice day!\n\nSincerely,\nThe Team at My Company"
+        }
+      }
+    },
+    "theme": {
+      "href": "https://api.typeform.com/themes/jL34ds"
+    },
+    "workspace": {
+      "href": "https://api.typeform.com/workspaces/Aw33bz"
+   
+    },
+    "hidden": [
+      "var1",
+      "var2",
+      "var3"
+    ],
+    "variables": {
+      "score": 0,
+      "price": 10.59
+    },
+    "welcome_screens": [
+      {
+        "ref": "nice-readable-welcome-ref",
+        "title": "Welcome Title",
+        "properties": {
+          "description": "Cool description for the welcome",
+          "show_button": true,
+          "button_text": "start"
+        },
+        "attachment": {
+          "type": "image",
+          "href": "https://images.typeform.com/images/4bcd3"
+        }
+      }
+    ],
+    "thankyou_screens": [
+      {
+        "ref": "nice-readable-thank-you-ref",
+        "title": "Thank you Title",
+        "properties": {
+          "show_button": true,
+          "button_text": "start",
+          "button_mode": "redirect",
+          "redirect_url": "http://www.typeform.com",
+          "share_icons": false
+        },
+        "attachment": {
+          "type": "image",
+          "href": "https://images.typeform.com/images/4bcd3"
+        }
+      }
+    ],
+    "fields": [
+      {
+        "ref": "nice_readable_date_reference",
+        "title": "Date Title",
+        "type": "date",
+        "properties": {
+          "description": "Cool description for the date",
+          "structure": "DDMMYYYY",
+          "separator": "-"
+        },
+        "validations": {
+          "required": false
+        },
+        "attachment": {
+          "type": "video",
+          "href": "https://www.youtube.com/watch?v=Uui3oT-XBxs",
+          "scale": 0.8
+        }
+      },
+      {
+        "ref": "nice_readable_dropdown_reference",
+        "title": "Dropdown Title",
+        "type": "dropdown",
+        "properties": {
+          "description": "Cool description for the dropdown",
+          "alphabetical_order": false,
+          "choices": [
+            {
+              "label": "Foo"
+            },
+            {
+              "label": "Bar"
+            }
+          ]
+        },
+        "validations": {
+          "required": false
+        },
+        "attachment": {
+          "type": "image",
+          "href": "https://images.typeform.com/images/4bcd3"
+        }
+      },
+      {
+        "ref": "nice_readable_email_reference",
+        "title": "Email Title",
+        "type": "email",
+        "properties": {
+          "description": "Cool description for the email"
+        },
+        "validations": {
+          "required": false
+        },
+        "attachment": {
+          "type": "video",
+          "href": "https://www.youtube.com/watch?v=Uui3oT-XBxs",
+          "scale": 0.8
+        }
+      },
+      {
+        "ref": "nice_readable_file_upload_reference",
+        "title": "File Upload Title",
+        "type": "file_upload",
+        "properties": {
+          "description": "Cool description for the file upload"
+        },
+        "validations": {
+          "required": false
+        }
+      },
+      {
+        "ref": "nice_readable_legal_reference",
+        "title": "Legal Title",
+        "type": "legal",
+        "properties": {
+          "description": "Cool description for the legal"
+        },
+        "validations": {
+          "required": false
+        }
+      },
+      {
+        "ref": "nice_readable_long_text_reference",
+        "title": "Long Text Title",
+        "type": "long_text",
+        "properties": {
+          "description": "Cool description for the long text"
+        },
+        "validations": {
+          "required": false,
+          "max_length": 20
+        },
+        "attachment": {
+          "type": "image",
+          "href": "https://images.typeform.com/images/4bcd3"
+        }
+      },
+      {
+        "ref": "nice_readable_multiple_choice_reference",
+        "title": "Multiple Choice Title",
+        "type": "multiple_choice",
+        "properties": {
+          "description": "Cool description for the multiple choice",
+          "randomize": true,
+          "allow_multiple_selection": false,
+          "allow_other_choice": true,
+          "vertical_alignment": false,
+          "choices": [
+            {
+              "label": "Foo",
+              "ref": "foo_choice_ref"
+            },
+            {
+              "label": "Bar",
+              "ref": "bar_choice_ref"
+            }
+          ]
+        },
+        "validations": {
+          "required": false
+        },
+        "attachment": {
+          "type": "video",
+          "href": "https://www.youtube.com/watch?v=Uui3oT-XBxs",
+          "scale": 0.8
+        }
+      },
+      {
+        "ref": "nice_readable_number_reference",
+        "title": "Number Title",
+        "type": "number",
+        "properties": {
+          "description": "Cool description for the number"
+        },
+        "validations": {
+          "required": false,
+          "min_value": 20,
+          "max_value": 50
+        },
+        "attachment": {
+          "type": "image",
+          "href": "https://images.typeform.com/images/4bcd3"
+        }
+      },
+      {
+        "ref": "nice_readable_opinion_scale_reference",
+        "title": "Opinion Scale Title",
+        "type": "opinion_scale",
+        "properties": {
+          "description": "Cool description for the opinion scale field",
+          "steps": 9,
+          "start_at_one": true,
+          "labels": {
+            "left": "left label",
+            "center": "center label",
+            "right": "right label"
+          }
+        },
+        "validations": {
+          "required": false
+        },
+        "attachment": {
+          "type": "video",
+          "href": "https://www.youtube.com/watch?v=Uui3oT-XBxs",
+          "scale": 0.8
+        }
+      },
+      {
+        "ref": "nice_readable_picture_choice_reference",
+        "title": "Picture Choice Title",
+        "type": "picture_choice",
+        "properties": {
+          "description": "Cool description for the picture choice",
+          "randomize": true,
+          "allow_multiple_selection": false,
+          "allow_other_choice": true,
+          "supersized": false,
+          "show_labels": false,
+          "choices": [
+            {
+              "ref": "foo_choice_ref1",
+              "label": "Foo 1",
+              "attachment": {
+                "type": "image",
+                "href": "https://images.typeform.com/images/4bcd3"
+              }
+            },
+            {
+              "ref": "foo_choice_ref2",
+              "label": "Foo 2",
+              "attachment": {
+                "type": "image",
+                "href": "https://images.typeform.com/images/4bcd3"
+              }
+            }
+          ]
+        },
+        "validations": {
+          "required": false
+        }
+      },
+      {
+        "ref": "nice_readable_rating_reference",
+        "title": "Rating Title",
+        "type": "rating",
+        "properties": {
+          "description": "Cool description for the rating",
+          "steps": 10,
+          "shape": "star"
+        },
+        "validations": {
+          "required": false
+        },
+        "attachment": {
+          "type": "video",
+          "href": "https://www.youtube.com/watch?v=Uui3oT-XBxs",
+          "scale": 0.8
+        }
+      },
+      {
+        "ref": "nice_readable_short_text_reference",
+        "title": "Short Text Title",
+        "type": "short_text",
+        "properties": {
+          "description": "Cool description for the short text"
+        },
+        "validations": {
+          "required": false,
+          "max_length": 20
+        },
+        "attachment": {
+          "type": "image",
+          "href": "https://images.typeform.com/images/4bcd3"
+        }
+      },
+      {
+        "ref": "nice_readable_statement_reference",
+        "title": "Statement Title",
+        "type": "statement",
+        "properties": {
+          "description": "Cool description for the statement",
+          "button_text": "Statement button text",
+          "hide_marks": true
+        },
+        "attachment": {
+          "type": "video",
+          "href": "https://www.youtube.com/watch?v=Uui3oT-XBxs",
+          "scale": 0.8
+        }
+      },
+      {
+        "ref": "nice_readable_website_reference",
+        "title": "Website Title",
+        "type": "website",
+        "properties": {
+          "description": "Cool description for the website"
+        },
+        "validations": {
+          "required": false
+        }
+      },
+      {
+        "ref": "nice_readable_yes_no_reference",
+        "title": "yes or no",
+        "type": "yes_no",
+        "properties": {
+          "description": "Cool description for the Yes/No question"
+        },
+        "validations": {
+          "required": false
+        },
+        "attachment": {
+          "type": "image",
+          "href": "https://images.typeform.com/images/4bcd3"
+        }
+      },
+      {
+        "ref": "nice_readable_payment_reference",
+        "title": "payment",
+        "type": "payment",
+        "properties": {
+          "description": "Cool description for the payment group",
+          "currency": "EUR",
+          "price": {
+            "type": "variable",
+            "value": "price"
+          },
+          "show_button": true,
+          "button_text": "next"
+        },
+        "validations": {
+          "required": false
+        },
+        "attachment": {
+          "type": "image",
+          "href": "https://images.typeform.com/images/4bcd3"
+        }
+      },
+      {
+        "ref": "a_group_field_ref",
+        "title": "group field",
+        "type": "group",
+        "properties": {
+          "description": "Question group description",
+          "show_button": true,
+          "button_text": "Some text",
+          "fields": [
+            {
+              "ref": "nice_readable_website_reference",
+              "title": "website",
+              "type": "website",
+              "properties": {
+                "description": "Cool description for the website"
+              }
+            }
+          ]
+        },
+        "attachment": {
+          "type": "image",
+          "href": "https://images.typeform.com/images/4bcd3"
+        }
+      }
+    ],
+    "logic": [
+      {
+        "type": "field",
+        "ref": "triggering_field_reference",
+        "actions": [
+          {
+            "action": "jump",
+            "details": {
+              "to": {
+                "type": "field",
+                "value": "jump_to_field_reference"
+              }
+            },
+            "condition": {
+              "op": "equal",
+              "vars": [
+                {
+                  "type": "field",
+                  "value": "jump_if_field reference"
+                },
+                {
+                  "type": "constant",
+                  "value": 5
+                }
+              ]
+            }
+          },
+          {
+            "action": "add",
+            "details": {
+              "target": {
+                "type": "variable",
+                "value": "score"
+              },
+              "value": {
+                "type": "constant",
+                "value": 5
+              }
+            },
+            "condition": {
+              "op": "is",
+              "vars": [
+                {
+                  "type": "field",
+                  "value": "triggering_field_reference"
+                },
+                {
+                  "type": "constant",
+                  "value": true
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
