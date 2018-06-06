@@ -33,6 +33,7 @@ module.exports = {
             console.log('Image added successfully');
       })
 
+//hlo
 
         const data = structure;
       var url = "https://api.typeform.com/forms";
